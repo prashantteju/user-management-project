@@ -1,0 +1,11 @@
+.hr{
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #181616
+}
+.card{
+    /* margin-left: 20em; */
+    /* margin-right: 20em; */
+    background-color: rgb(245 247 247);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,184 @@
+{
+  "getvalue": [
+    {
+      "Username": "shiv",
+      "Password": "shiv@123",
+      "Repassword": "shiv@123",
+      "Email": "shiv@gmail.com",
+      "id": "2"
+    },
+    {
+      "id": "9",
+      "Username": "prashant",
+      "Password": "sp@1234",
+      "Repassword": "sp@1234",
+      "Email": "prashant@12345"
+    },
+    {
+      "id": "12",
+      "Username": "harshad",
+      "Password": "harsh@1234",
+      "Repassword": "harsh@1234",
+      "Email": "harshad"
+    },
+    {
+      "Username": "sanket",
+      "Password": "sk@123",
+      "Repassword": "sk@123",
+      "Email": "sanket@123",
+      "id": "15"
+    },
+    {
+      "id": "18",
+      "Username": "varshaIcodex",
+      "Password": "varsha@123",
+      "Repassword": "varsha@123",
+      "Email": "vrahsa@gmail.com"
+    },
+    {
+      "Username": "rushi",
+      "Password": "rushi@123",
+      "Repassword": "rushi@123",
+      "Email": "rushi@gmail.com",
+      "id": "19"
+    },
+    {
+      "Username": "roshan",
+      "Password": "roshan@123",
+      "Repassword": "roshan@123",
+      "Email": "roshan55@gmail.com",
+      "UserRole": "Admin",
+      "id": "20"
+    },
+    {
+      "Username": "shankar",
+      "Password": "shankar@123",
+      "Repassword": "shankar@123",
+      "Email": "shankar@2323gmail.com",
+      "UserRole": "user",
+      "id": "21"
+    },
+    {
+      "Username": "Pratik",
+      "Password": "Pratik@123",
+      "Repassword": "Pratik@123",
+      "Email": "Pratik222@gmail.com",
+      "UserRole": "User",
+      "id": "23"
+    }
+  ],
+  "Mangeuser": [
+    {
+      "id": "f924",
+      "FirstName": "venky",
+      "LastName": "venky12",
+      "Address": "CHORE ROAD JAWAL AT POST UMBRAJ SATARA",
+      "Email": "sangram111299@gmail.com",
+      "contact": 9623166528
+    },
+    {
+      "id": "6512",
+      "FirstName": "Akash",
+      "LastName": "Akash",
+      "Email": "aksha@gmail.com",
+      "Address": "Pune,Kharadi",
+      "contact": 7875664354
+    },
+    {
+      "id": "682b",
+      "FirstName": "venky",
+      "LastName": "venky",
+      "Email": "sangram111299@gmail.com",
+      "Address": "CHORE ROAD JAWAL AT POST UMBRAJ SATARA",
+      "contact": 9623166528
+    },
+    {
+      "id": "821f",
+      "FirstName": "venky",
+      "LastName": "venky",
+      "Email": "akash@gmail.com",
+      "Address": "pune",
+      "contact": 3456879086
+    },
+    {
+      "id": "e237",
+      "FirstName": "venky",
+      "LastName": "venky",
+      "Email": "sangram111299@gmail.com",
+      "Address": "CHORE ROAD JAWAL AT POST UMBRAJ SATARA",
+      "contact": 9623166528
+    },
+    {
+      "id": "9877",
+      "FirstName": "venky",
+      "LastName": "mahamuni",
+      "Email": "sangram111299@gmail.com",
+      "Address": "CHORE ROAD JAWAL AT POST UMBRAJ SATARA",
+      "contact": 9623166528
+    },
+    {
+      "id": "adfc",
+      "FirstName": "venky",
+      "LastName": "mahamuni122",
+      "Email": "sangram111299@gmail.com",
+      "Address": "CHORE ROAD JAWAL AT POST UMBRAJ SATARA",
+      "contact": 962316652
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "AddResult": [
+    {
+      "Fname": "Prashant",
+      "Lname": "Prashant",
+      "Java": "java",
+      "JavaMarks": "89",
+      "Python": "paython",
+      "pythonMarks": "88",
+      "RDBMS": "RDBMS",
+      "RdbmsMarks": "98",
+      "MachinL": "machinLearning",
+      "MachinMarks": "78",
+      "Javascrpt": "Javascript",
+      "JavascriptMarks": "77",
+      "status": "pass",
+      "RollNo": "128",
+      "id": "2"
+    },
+    {
+      "Fname": "Mohit",
+      "Lname": "Parabh",
+      "Java": "java",
+      "JavaMarks": "95",
+      "Python": "paython",
+      "pythonMarks": "90",
+      "RDBMS": "RDBMS",
+      "RdbmsMarks": "89",
+      "MachinL": "machinLearning",
+      "MachinMarks": "88",
+      "Javascrpt": "Javascript",
+      "JavascriptMarks": "78",
+      "status": "Pass",
+      "RollNo": "121",
+      "id": "3"
+    },
+    {
+      "Fname": "rsuhikesh",
+      "Lname": "Ghatage",
+      "Java": "java",
+      "JavaMarks": "98",
+      "Python": "paython",
+      "pythonMarks": "88",
+      "RDBMS": "RDBMS",
+      "RdbmsMarks": "90",
+      "MachinL": "machinLearning",
+      "MachinMarks": "35",
+      "Javascrpt": "Javascript",
+      "JavascriptMarks": "99",
+      "status": "Pass",
+      "RollNo": "96",
+      "id": "4"
+    }
+  ]
+}

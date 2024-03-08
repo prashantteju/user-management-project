@@ -1,0 +1,70 @@
+<app-header></app-header>
+<div class="container">
+    <div class="mt-2 mb-4">
+        <hr class="hr">
+        <div class="card ">
+            <div class="card-body" align="center">
+                <form [formGroup]="User">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr class="tb-white">
+                                <th>Id</th>
+                                <th>FirstName</th>
+                                <th>LastName</th>
+                                <th>Address</th>
+                                <th>Email_Id</th>
+                                <th>contact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="tb-grey">
+                                <th scope="row"></th>
+                                <td><input type="text" class="form-control" formControlName="FirstName"
+                                        [(ngModel)]="Fname1"></td>
+                                <td><input type="text" class="form-control" formControlName="LastName"
+                                        [(ngModel)]="Lname1"></td>
+                                <td><input type="text" class="form-control" formControlName="Address"
+                                        [(ngModel)]="Address1"></td>
+                                <td> <input type="text" class="form-control" formControlName="Email"
+                                        [(ngModel)]="Email1"></td>
+                                        <td> <input type="text" class="form-control" formControlName="contact"
+                                            [(ngModel)]="contact1"></td>
+
+                                <td><button type="submit" value="Submit" class="btn btn-success"
+                                        (click)="Update()">Update</button></td>
+                                <td><button type="submit" value="Clear" class="btn btn-danger"
+                                        (click)="clear()">Clear</button></td>
+                            </tr>
+
+                            <tr class="tb-grey" *ngFor="let items of userdata;let i=index">
+                                <td>{{i+1}}</td>
+                                <td>{{items.FirstName}}</td>
+                                <td>{{items.LastName}}</td>
+                                <td>{{items.Address}}</td>
+                                <td>{{items.Email}}</td>
+                                <td>{{items.contact}}</td>
+                                <td> <button type="submit" value="Clear" class="btn btn-danger"
+                                    (click)="isEdit(i,items.FirstName,items.id)">Edit</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-primary"
+                                    (click)="remodata(items.id)">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="col-6" style="text-align: right">
+
+                <button class="submit " mat-raised-button color="primary"
+                    [routerLink]="['/user-list']">Back</button>&nbsp;&nbsp;
+                <!-- <button type="button" class="btn btn-primary" [routerLink]="['/singup']">Back</button> -->
+                <button class="submit" mat-raised-button color="primary" [routerLink]="['/user-list']">Next</button>
+                <!-- <button type="submit" class="btn Button" >Back</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer style="text-align:right"></app-footer>

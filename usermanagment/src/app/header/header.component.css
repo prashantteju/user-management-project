@@ -1,0 +1,92 @@
+.fa-circle {
+    color: #3155A6;
+    margin-top: 0.833333vw !important;
+    font-size: 2vw;
+}
+
+.icodexlogo {
+    height: 4.583333333333vw;
+    width: 10.0895834vw;
+    cursor: pointer;
+}
+
+.btn-secondary {
+
+    background-color: white;
+    border: 0.10vw solid #d2d2d2;
+    height: 3.7395333vw;
+    width: 11.104166vw;
+    border-bottom: none;
+    margin: 0.525vw -1px -1px 0px !important;
+}
+
+.btn-secondary:active {
+    background-color: white;
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+    color: #fff;
+    background-color: #fff !important;
+
+}
+
+.btn {
+    margin-top: 0.625vw;
+    text-align: end !important;
+}
+
+.fa {
+    color: #3155A6;
+}
+
+.popup-text {
+    font-size: 0.833333vw;
+}
+.firstname{
+    margin-right: 3vw;
+    margin-top: 10px;
+}
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+  .button{
+    height: 5em;
+    width: 12em;
+  }
+.Lg{
+    margin-left: 1em;
+    height: 3.5em;
+    width: 7em;
+    padding: 1em;
+    padding-right: 2em;
+}
+  

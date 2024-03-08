@@ -13,10 +13,12 @@ import { Router } from '@angular/router';
 })
 export class UserListComponent implements OnInit{
   data: any;
+  existing: any;
   constructor(private fb: FormBuilder, private toastr: NgToastService,private apiService: ApiService,private router: Router) { }
   public userInfo!: FormGroup;
 
   ngOnInit(): void {
+    this.checkdata()
     this.userInfo = this.fb.group({
       FirstName: ['', Validators.required],
       LastName: ['', Validators.required],
@@ -26,10 +28,23 @@ export class UserListComponent implements OnInit{
     })  }
 
 
+    checkdata(){
+      debugger
+      this.apiService.getdata1().subscribe(
+        res => {
+          console.log(res);
+          this.existing=res;
+        });
+        console.log(this.data)
+    }
     getUserDate() {
       debugger
       console.log(this.userInfo.value)
-      let requestbody2: object = {
+      this.data = this.existing.find((a: any) => {
+        return a.FirstName == this.userInfo.value.FirstName && a.Email == this.userInfo.value.Email
+      });
+      console.log(this.data)
+        let requestbody2: object = {
 
         "FirstName":this.userInfo.value.FirstName,
         "LastName":this.userInfo.value.LastName,
@@ -37,19 +52,15 @@ export class UserListComponent implements OnInit{
         "Address":this.userInfo.value.Address,
         "contact":parseInt(this.userInfo.value.contact),
       }
-      this.apiService.getdata().subscribe(
-        res => {
-          console.log(res);
-          this.data = res.find((a: any) => {
-            return a.Fname == this.userInfo.value.Usename && a.RollNo == this.userInfo.value.Rollno
-          });
-        });
       console.log(requestbody2);
       if(this.userInfo.invalid){
         this.toastr.error({detail:"user error",summary:" All field are needed..!!",duration:2000})
       }
-      else{
-        
+      else if(this.data){
+        this.toastr.error({detail:"user error",summary:" User already exist..!!",duration:2000})
+        return;
+      }
+      else{  
       this.apiService.createuser(requestbody2).subscribe(
         d=>{
           this.toastr.success({detail:"user create",summary:"successfully added Information",duration:2000})

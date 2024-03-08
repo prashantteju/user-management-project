@@ -23,6 +23,9 @@ export class ApiService {
  setdata(requestbody:any){
   return this.http.post<any>("http://localhost:3000/getvalue",requestbody)
  }
+ getdata1(){
+  return this.http.get<any>("http://localhost:3000/Mangeuser")
+ }
 
 
  loginUser(){
